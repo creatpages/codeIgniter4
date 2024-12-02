@@ -1,0 +1,18 @@
+# total 3 errors
+
+parameters:
+    ignoreErrors:
+        -
+            message: '#^Class stdClass referenced with incorrect case\: stdclass\.$#'
+            count: 9
+            path: ../../tests/system/Database/Live/MySQLi/RawSqlTest.php
+
+        -
+            message: '#^Class stdClass referenced with incorrect case\: stdclass\.$#'
+            count: 5
+            path: ../../tests/system/Database/Live/UpsertTest.php
+
+        -
+            message: '#^Class CodeIgniter\\Controller referenced with incorrect case\: CodeIgniter\\controller\.$#'
+            count: 2
+            path: ../../tests/system/Router/RouteCollectionTest.php

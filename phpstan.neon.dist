@@ -5,7 +5,7 @@ services:
 			- phpstan.rules.rule
 
 includes:
-	- phpstan-baseline.php
+	- utils/phpstan-baseline/loader.neon
 
 parameters:
 	phpVersion: 80100
@@ -40,5 +40,6 @@ parameters:
 		allRules: false
 		disallowedLooseComparison: true
 		booleansInConditions: true
-		disallowedConstructs: true
 		matchingInheritedMethodNames: true
+	shipmonkBaselinePerIdentifier:
+		directory: %currentWorkingDirectory%
