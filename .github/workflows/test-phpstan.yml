@@ -82,7 +82,7 @@ jobs:
           restore-keys: ${{ runner.os }}-phpstan-
 
       - name: Install dependencies
-        run: composer update --ansi --no-interaction
+        run: composer update --ansi --no-interaction --with-all-dependencies
 
       - name: Run static analysis
         run: composer phpstan:check
